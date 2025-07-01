@@ -1,0 +1,77 @@
+.offers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #f7f9fc;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .offer-card {
+    text-decoration: none;  /* Unterstreichung entfernen */
+    color: inherit;         /* Textfarbe vom Eltern-Element übernehmen */
+    display: block;         /* Damit der ganze Bereich klickbar ist */
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 12px 0;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .offer-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .offer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .offer-header h2 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .offer-prize {
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  .offer-description {
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .offer-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+  }
+  
+  .offer-status {
+    text-align: right;
+  }
+  
+  .done {
+    background-color: #c8e6c9;
+    color: #2e7d32;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
+  .open {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
